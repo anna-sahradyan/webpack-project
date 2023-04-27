@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open"
+    "build:dev": "set NODE_ENV=dvelopment&&webpack",
+    "start": "set NODE_ENV=dvelopment&&webpack serve",
+    "build:prod": "set NODE_ENV=dvelopment&&webpack",
+    "clear": "rd /s /q dist"
   },
   "keywords": [],
   "author": "",
